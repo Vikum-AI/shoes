@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$main-font: 'Open Sans', sans-serif;
+
+// body {
+//     background: #74ebd5;  /* fallback for old browsers */
+//     background: -webkit-linear-gradient(to bottom, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+//     background: linear-gradient(to bottom, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+// }
+
+body {
+    font-family: $main-font;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    font-family: $main-font;
+    background: #74ebd5;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to bottom, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to bottom, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    .logo {
+        width: 4%;
+        height: 4%;
+        margin: 1.4rem;
+        margin-top: 2.2rem;
+    }
+    nav {
+        margin-top: 0.4rem;
+        ul {
+            display: flex;
+            li {
+                margin: 2rem;
+                list-style: none;
+                
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+    .search-bar {
+        margin: 2rem;
+        display: flex;
+        border: 1px solid whitesmoke;
+        height: 50%;
+        .search-icon {
+            margin: 2px;
+        }
+        input {
+        background: none;
+        border: none;
+        padding: 0.4rem;
+    }}
+    .right-icons {
+        display: flex;
+        margin: 1.2rem;
+        .cart-icon, .profile-icon {
+            margin: 1rem;
+        }
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    background: #e9f5fe;
+   .left {
+    .summer-h1 {
+        // background: #FC466B;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+    .collection-h1 {
+        font-size: 3rem;
+        font-weight: 300;
+        color: rgb(102, 102, 102);
+    }
+    .year-h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 4rem;
+    }
+    p {
+        margin-bottom: 2rem;
+    }
+    .shop-btn {
+        border: 1px solid black;
+        padding: 0.8rem;
+        background: black;
+        color: white;
+        cursor: pointer;
+    }
+   }
+   .right {
+    background: #FC466B;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 75%;
+    }
+   }
+}
